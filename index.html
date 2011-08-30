@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hybrid Images</title>
+    <link rel="stylesheet" type="text/css" href="style/layout.css" />
+    <link rel="stylesheet" type="text/css" href="style/droparea.css" />
+    <script src="js/jquery-1.6.2.min.js"></script>
+    <script src="js/kinetic-v1.2.0.js"></script>
+    <script src="js/canvasImg.js"></script>
+    <script src="js/droparea.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  
+  <body>
+    
+    <div id="wrapper">
+      
+      <nav>
+	<div class="menu">
+	  <ul>
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="image.html">Image</a></li>
+	    <li><a href="text.html">Text</a></li>
+	  </ul>
+	</div>
+      </nav>
+      
+      <header>
+	<h1>Hybrid Images</h1>
+	<p>人間の視覚の特性を利用して異なる距離から見た時に違って見える画像を生成するWebアプリケーションです</p>
+      </header>
+      
+      <section id="main">
+	
+	<section id="content">
+	  
+	  <article>
+	    <h2>Canvas</h2>
+	    <span><input type="button" value="image load to canvas" id="load" /></span>
+	    <canvas id="my-canvas"></canvas>
+	  </article>
+	  
+	  <article>
+	    <h2>Hybrid Image</h2>
+	    <span><input type="button" value="create hybrid image" id="create" /></span>
+	    <div id="result"></div>
+	  </article>
+
+	</section> <!-- end of content -->
+
+	<aside id="sidebar">
+	  <h3>Image Upload Area</h3>
+	  <div class="src1 droparea thumb" data-width="160" data-height="105" data-type="jpg" data-crop="true" data-folder="upload"></div>
+	  <div class="src2 droparea thumb" data-width="160" data-height="105" data-type="jpg" data-crop="true" data-folder="upload"></div>
+
+	  <h3>Contact</h3>
+	  <ul>
+	    <li>Twitter </li>
+	    <li>Messenger</li>
+	  </ul>
+	</aside> <!-- end of sidebar -->
+      
+      </section> <!-- end of main -->
+      
+      <footer>
+	
+	<section id = "footer-area">
+	  
+	  <aside class="footer-segment">
+	    <h4>Special Thanks</h4>
+	    <ul>
+	      <li><a href="http://cvcl.mit.edu/hybridimage.htm">Hybrid Images @ MIT</a></li>
+	      <li><a href="http://freehtml5templates.com">Free HTML5 Templates</a></li>
+	    </ul>
+	  </aside> <!-- end of footer-segment -->
+	
+	  <aside class="footer-segment">
+	    <h4></h4>
+	    <ul>
+	      <li></li>
+	      <li></li>
+	    </ul>
+	  </aside> <!-- end of footer-segment -->
+
+	</section> <!-- end of footer-area -->
+    
+      </footer>
+    
+    </div> <!-- end of wrapper -->
+    
+  </body>
+</html>

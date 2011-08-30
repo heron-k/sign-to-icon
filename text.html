@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hybrid Images</title>
+    <link rel="stylesheet" type="text/css" href="style/layout.css" />
+    <link rel="stylesheet" type="text/css" href="style/droparea.css" />
+    <script src="js/jquery-1.6.2.min.js"></script>
+    <script src="js/kinetic-v1.2.0.js"></script>
+    <script src="js/kinetic2d-v1.0.0.js"></script>
+    <script src="js/canvasImg.js"></script>
+    <script src="js/canvasText.js"></script>
+    <script src="js/droparea.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  
+  <body>
+    
+    <div id="wrapper">
+      
+      <nav>
+	<div class="menu">
+	  <ul>
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="image.html">Image</a></li>
+	    <li><a href="text.html">Text</a></li>
+	  </ul>
+	</div>
+      </nav>
+      
+      <header>
+	<h1>Hybrid Images</h1>
+	<p>人間の視覚の特性を利用して異なる距離から見た時に違って見える画像を生成するWebアプリケーションです</p>
+      </header>
+      
+      <section id="main">
+	
+	<section id="content">
+	  <article>
+	    <h2>Canvas</h2>
+	    <span><input type="button" value="image load to canvas" id="load" /></span>
+	    <span><input type="button" value="create hybrid image" id="create" /></span>
+	    <canvas id="my-canvas"></canvas>
+	  </article>
+	  
+	  <article>	    
+	    <h2>Text</h2>
+	    <span><input type="text" id="sign" /></span>
+	    
+	    <select id="font-size">
+	      <option>8</option>
+	      <option>9</option>
+	      <option>10</option>
+	      <option>12</option>
+	      <option>14</option>
+	      <option>16</option>
+	      <option>18</option>
+	      <option>20</option>
+	      <option>22</option>
+	      <option>24</option>
+	      <option>28</option>
+	      <option>32</option>
+	    </select>
+	    
+	    <select id="font">
+	      <option>フォント</option>
+	      <option>ＭＳゴシック</option>
+	    </select>
+	    
+	    <span><input type="button" id="save-text" value="save text" /></span>
+	    <br />
+	    <canvas id="text-area" width="300" height="100"></canvas>
+	    <div id="src2"></div>
+	    
+	  </article>
+	  
+	  <article>
+	    <h2>Hybrid Image</h2>
+	    <div id="result"></div>
+	  </article>
+
+	</section> <!-- end of content -->
+
+	<aside id="sidebar">
+	  <h3>Image Upload Area</h3>
+	  <div id="src1" class="droparea thumb" data-width="140" data-height="105" data-type="jpg" data-crop="true" data-folder="upload" data-something="stupid"></div>
+	  
+	  <h3>Contact</h3>
+	  <ul>
+	    <li>Twitter </li>
+	    <li>Messenger</li>
+	  </ul>
+	</aside> <!-- end of sidebar -->
+      
+      </section> <!-- end of main -->
+      
+      <footer>
+	
+	<section id = "footer-area">
+	  
+	  <aside class="footer-segment">
+	    <h4>Special Thanks</h4>
+	    <ul>
+	      <li><a href="http://cvcl.mit.edu/hybridimage.htm">Hybrid Images @ MIT</a></li>
+	      <li><a href="http://freehtml5templates.com">Free HTML5 Templates</a></li>
+	    </ul>
+	  </aside> <!-- end of footer-segment -->
+	
+	  <aside class="footer-segment">
+	    <h4></h4>
+	    <ul>
+	      <li></li>
+	      <li></li>
+	    </ul>
+	  </aside> <!-- end of footer-segment -->
+
+	</section> <!-- end of footer-area -->
+    
+      </footer>
+    
+    </div> <!-- end of wrapper -->
+    
+  </body>
+</html>
